@@ -30,7 +30,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  widgetbook: ^3.0.0-rc.1
+  widgetbook:
+    git:
+      url: https://github.com/widgetbook/widgetbook.git
+      path: packages/widgetbook
+      ref: main
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -47,6 +51,13 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+
+dependencies_overrides:
+  widgetbook_core:
+    git:
+      url: https://github.com/widgetbook/widgetbook.git
+      path: packages/widgetbook_core
+      ref: main
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

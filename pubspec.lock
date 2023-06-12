@@ -219,10 +219,11 @@ packages:
   widgetbook:
     dependency: "direct main"
     description:
-      name: widgetbook
-      sha256: "4ec2d009ba1e441d2f73d7d1c278f2cc3832e99b710b09b5f20137e2f87392c2"
-      url: "https://pub.dev"
-    source: hosted
+      path: "packages/widgetbook"
+      ref: main
+      resolved-ref: "18a43534465277f77e9da09d9f84169b6a686006"
+      url: "https://github.com/widgetbook/widgetbook.git"
+    source: git
     version: "3.0.0-rc.1"
   widgetbook_core:
     dependency: transitive
