@@ -30,6 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   widgetbook:
     git:
       url: https://github.com/widgetbook/widgetbook.git
@@ -52,7 +54,7 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
 
-dependencies_overrides:
+dependency_overrides:
   widgetbook_core:
     git:
       url: https://github.com/widgetbook/widgetbook.git

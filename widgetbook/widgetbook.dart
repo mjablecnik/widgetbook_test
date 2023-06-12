@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_test_app/main.dart';
 import 'package:widgetbook/widgetbook.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 class WidgetbookApp extends StatelessWidget {
   const WidgetbookApp({Key? key}) : super(key: key);
@@ -15,8 +16,9 @@ class WidgetbookApp extends StatelessWidget {
             const Locale('en'),
           ],
           localizationsDelegates: [
-            DefaultWidgetsLocalizations.delegate,
-            DefaultMaterialLocalizations.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
           ],
         ),
         DeviceFrameAddon(
@@ -27,14 +29,15 @@ class WidgetbookApp extends StatelessWidget {
             Devices.ios.iPad,
           ],
         ),
-        TextScaleAddon(
-          scales: [1, 2],
-        ),
+        TextScaleAddon(scales: [1, 1.5, 2]),
         MaterialThemeAddon(
           themes: [
             WidgetbookTheme(
-              data: ThemeData.dark(),
-              name: 'DarkTheme',
+              data: ThemeData(
+                colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+                useMaterial3: true,
+              ),
+              name: 'LightTheme',
             ),
           ],
         ),

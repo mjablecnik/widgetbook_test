@@ -78,6 +78,11 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.1"
+  flutter_localizations:
+    dependency: "direct main"
+    description: flutter
+    source: sdk
+    version: "0.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -91,6 +96,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.0"
+  intl:
+    dependency: transitive
+    description:
+      name: intl
+      sha256: a3715e3bc90294e971cb7dc063fbf3cd9ee0ebf8604ffeafabd9e6f16abbdbe6
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.18.0"
   js:
     dependency: transitive
     description:
@@ -226,12 +239,13 @@ packages:
     source: git
     version: "3.0.0-rc.1"
   widgetbook_core:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
-      name: widgetbook_core
-      sha256: f251af4c0514202234856f297c36fcc6478a5a2fa5c6bb7b23514ea35b08d3be
-      url: "https://pub.dev"
-    source: hosted
+      path: "packages/widgetbook_core"
+      ref: main
+      resolved-ref: "18a43534465277f77e9da09d9f84169b6a686006"
+      url: "https://github.com/widgetbook/widgetbook.git"
+    source: git
     version: "3.0.0-rc.1"
 sdks:
   dart: ">=3.0.0 <4.0.0"
